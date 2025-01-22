@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excel documents processor for school stuffs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body >
+
+  <div class="contendor">
+    <div class="container">
+      <div class="import">
+        <p>Veuillez sélectionner le fichier à importer</p>
+        <!-- <button id="import" type="button">Importer</button> -->
+        <input type="file" id="fileInput" accept="application/pdf">
+      </div>
+      <div class="export">
+        <p>Choisissez le chemin de destination</p>
+        <button id="export" type="button">Exporter</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./dependencies/pdf.worker.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
